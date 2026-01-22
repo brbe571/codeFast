@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import ButtonLogin from "@/components/ButtonLogin";
 import ListItem from "@/components/ListItem";
 import FAQListItem from "@/components/FAQListItem";
+import productDemo from "./productDemo.jpeg";
 
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
     <main>
       {/* HEADER */}
       <section className="bg-base-200" id="header">
-          <div className="bg-base-200 flex justify-between items-center py-2 px-8 max-w-3xl mx-auto">
+          <div className="bg-base-200 flex justify-between items-center py-2 px-8 max-w-5xl mx-auto">
             <div>CodeFastSaas</div>
             <div className="space-x-4 max-md:hidden">
               <a className="link link-hover" href="#pricing">Pricing</a>
@@ -26,12 +28,15 @@ export default function Home() {
           </div>
       </section>
       {/* HERO */}
-      <section className='text-center py-32 px-8 max-w-3xl mx-auto' id="hero">
-        <h1 className='text-4xl lg:text-5xl font-extrabold mb-6'>Collect Customer feedback to build better products</h1>
-        <div className='opacity-90 mb-10'>Create a feedback board in minutes, prioritize features, abd build products your customers will love</div>
+      <section className='text-center lg:text-left py-32 px-8 max-w-5xl mx-auto flex flex-col lg:flex-row gap-14 items-center lg:items-start' id="hero">
 
-        <ButtonLogin isLoggedIn={isLoggedIn} name={name} />
+        <Image src={productDemo} alt="Product Demo" className="w-96 rounded-xl"/>
+        <div>
+          <h1 className='text-4xl lg:text-5xl font-extrabold mb-6'>Collect Customer feedback to build better products</h1>
+          <div className='opacity-90 mb-10'>Create a feedback board in minutes, prioritize features, abd build products your customers will love</div>
 
+          <ButtonLogin isLoggedIn={isLoggedIn} name={name} />
+        </div>
       </section>
       {/* PRICING */ }
       <section className="bg-base-200" id="pricing">
