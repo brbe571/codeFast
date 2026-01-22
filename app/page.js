@@ -52,7 +52,7 @@ export default function Home() {
             </div>
 
             <ul className="space-y-2">
-              <ListItem>Collect Customer Feedback</ListItem>
+              <ListItem>Collect Feedback</ListItem>
               <ListItem>Unlimited Boards</ListItem>
               <ListItem>Admin Dashboard</ListItem>
               <ListItem>24/7 Support</ListItem>
