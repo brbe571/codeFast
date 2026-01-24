@@ -59,7 +59,7 @@ export default async function Home() {
             <ul className="space-y-2">
               <ListItem>Send Property Info packs</ListItem>
               <ListItem>Track views and accessed documents</ListItem>
-              <ListItem>Store</ListItem>
+              <ListItem>Store Securely</ListItem>
               <ListItem>24/7 Support</ListItem>
             </ul>
               
@@ -81,15 +81,15 @@ export default async function Home() {
           {[
             {
               question: "What do I get exactly?",
-              answer: "Lorem Ipsum"
+              answer: "Store property documents securely and track what your clients are viewing"
             },
             {
               question: "Can I get a refund?",
-              answer: "Lorem Ipsum"
+              answer: "If you are not happy with the service we offer a full refund"
             },
             {
-              question: "I have another question?",
-              answer: "Lorem Ipsum"
+              question: "How are document tracking measured?",
+              answer: "You will see which users have clicked and downloaded documents. How many times they have done so with the client contact details "
             }
           ].map((qa) => (
             <FAQListItem key={qa.question} qa={qa} />
