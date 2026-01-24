@@ -5,6 +5,7 @@ import ListItem from "@/components/ListItem";
 import FAQListItem from "@/components/FAQListItem";
 import productDemo from "./productDemo.jpeg";
 import { auth } from "@/auth";
+import houseLogo from "./house_logo.jpeg";
 
 
 export default async function Home() {
@@ -18,7 +19,10 @@ export default async function Home() {
       {/* HEADER */}
       <section className="bg-base-200" id="header">
           <div className="bg-base-200 flex justify-between items-center py-2 px-8 max-w-5xl mx-auto">
-            <div>ListingSend</div>
+            <div className="flex items-centre gap-2">
+              <Image src={houseLogo} alt="House logo" className="w-12"  />
+              
+            </div>
             <div className="space-x-4 max-md:hidden">
               <a className="link link-hover" href="#pricing">Pricing</a>
               <a className="link link-hover" href="#FAQ">FAQ</a>
